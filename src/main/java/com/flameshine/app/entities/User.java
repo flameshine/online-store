@@ -1,8 +1,7 @@
 package com.flameshine.app.entities;
 
 import javax.persistence.*;
-import javax.validation.constraints.*;
-import org.hibernate.validator.constraints.Length;
+import org.hibernate.validator.constraints.*;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import java.util.Collection;
 import lombok.*;
@@ -34,16 +33,16 @@ public class User {
     @JsonIgnore
     private String password;
 
-    @Column(name = "firstName", nullable = false)
+    @Column(name = "first_name", nullable = false)
     @NotEmpty(message = "This field is required.")
     private String firstName;
 
-    @Column(name = "lastName", nullable = false)
+    @Column(name = "last_name", nullable = false)
     @NotEmpty(message = "This field is required.")
     private String lastName;
 
-    @Column(name = "isActive", nullable = false)
-    private int isActive;
+    @Column(name = "activity", nullable = false)
+    private boolean activity;
 
     @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(name = "user_roles", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))

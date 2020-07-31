@@ -15,7 +15,7 @@ public class Role {
     @Column(name = "role_id", nullable = false)
     private Long id;
 
-    @Column(name = "roleName", unique = true, nullable = false)
+    @Column(name = "role_name", unique = true, nullable = false)
     private String roleName;
 
     @ManyToMany(cascade = CascadeType.ALL, mappedBy = "roles")
