@@ -15,7 +15,7 @@
     <artifactId>online-store</artifactId>
     <version>1.0.0</version>
     <name>online-store</name>
-    <description>Implementation of online shopping application with authentication system.</description>
+    <description>Implementation of online shopping cart application with authentication system.</description>
 
     <properties>
         <java.version>1.8</java.version>
@@ -52,7 +52,7 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <scope>runtime</scope>
-            <version>8.0.13</version>
+            <version>8.0.16</version>
         </dependency>
 
         <dependency>

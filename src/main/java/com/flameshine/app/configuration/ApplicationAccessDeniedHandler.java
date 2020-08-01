@@ -7,7 +7,7 @@ import javax.servlet.http.*;
 import java.io.IOException;
 
 @Component
-public class AppAccessDeniedHandler implements AccessDeniedHandler {
+public class ApplicationAccessDeniedHandler implements AccessDeniedHandler {
 
     @Override
     public void handle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, AccessDeniedException e) throws IOException {
