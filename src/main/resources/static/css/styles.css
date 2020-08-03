@@ -1,9 +1,9 @@
 h1 {
-    color: #0000FF;
+    color: #337ab7;
 }
 
 h2 {
-    color: #FF0000;
+    color: crimson;
 }
 
 footer {
@@ -15,17 +15,11 @@ a {
 }
 
 a:hover, a:focus, a:active {
-    color: purple;
+    color: crimson;
     text-decoration: none;
 }
 
 .pagination {
     display: block;
     text-align: center;
-}
-
-.validation-message {
-    font-style: normal;
-    font-size: 10px;
-    color: #FF1C19;
 }
