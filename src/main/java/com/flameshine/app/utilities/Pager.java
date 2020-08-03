@@ -15,10 +15,6 @@ public class Pager {
         return products.getNumber() + 1;
     }
 
-    public int getPageSize() {
-        return products.getSize();
-    }
-
     public boolean hasNext() {
         return products.hasNext();
     }

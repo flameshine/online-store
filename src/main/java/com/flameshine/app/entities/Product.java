@@ -18,7 +18,6 @@ public class Product {
     private Long id;
 
     @Column(name = "name",unique = true, nullable = false)
-    @Length(min = 5, message = "Name must have at least 5 characters.")
     private String name;
 
     @Column(name = "description", nullable = false)
