@@ -11,9 +11,8 @@
 <div th:replace="/fragments/header :: navbar"></div>
 
 <div class="container">
-    <h1 th:if="${errorMessage}" th:utext="${errorMessage}">Error - java.lang.NullPointerException</h1>
-    <h1 th:if="!${errorMessage}">404 - Page doesn't exist</h1>
-    <a href="home.html" th:href="@{/home}">Back to Home Page</a>
+    <div th:replace="/fragments/products :: products"></div>
+    <div th:replace="/fragments/pagination :: pagination(URLparameter = '/home')"></div>
 </div>
 
 <div th:replace="/fragments/footer :: footer"></div>

@@ -6,16 +6,16 @@
 
     <div th:fragment="header">
         <title th:attr="data-custom=#{thymeleaf.app.title}">Store</title>
-        <link rel="stylesheet" media="screen" href="http://cdn.jsdelivr.net/webjars/bootstrap/4.5.0/css/bootstrap.min.css" th:href="@{/webjars/bootstrap/4.5.0/css/bootstrap.min.css}"/>
+        <link rel="stylesheet" media="screen" href="http://cdn.jsdelivr.net/webjars/bootstrap/4.5.0/css/bootstrap.min.css" th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.min.css}"/>
         <link rel="stylesheet" href="../../css/styles.css" th:href="@{/css/styles.css}"/>
-        <script src="http://cdn.jsdelivr.net/webjars/jquery/3.5.0/jquery.min.js" th:src="@{/webjars/jquery/3.5.0/jquery.min.js}"></script>
+        <script src="http://cdn.jsdelivr.net/webjars/jquery/3.5.0/jquery.min.js" th:src="@{/webjars/jquery/2.1.4/jquery.min.js}"></script>
     </div>
 
 </head>
 
 <body>
 
-<div th:fragment="navigationBar">
+<div th:fragment="navbar">
     <nav class="navbar">
         <div class="container">
 
