@@ -7,8 +7,8 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.data.domain.*;
 import java.util.Optional;
 import com.flameshine.app.services.ProductService;
-import com.flameshine.app.entities.Product;
 import com.flameshine.app.utilities.Pager;
+import com.flameshine.app.entities.Product;
 
 @Controller
 public class HomeController {
@@ -20,7 +20,7 @@ public class HomeController {
         this.productService = productService;
     }
 
-    @GetMapping(value = "/home")
+    @GetMapping(value = {"/", "/home"})
     public ModelAndView home(@RequestParam("page") Optional<Integer> page) {
 
         ModelAndView modelAndView = new ModelAndView("/home");

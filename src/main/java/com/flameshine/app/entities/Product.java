@@ -2,14 +2,12 @@ package com.flameshine.app.entities;
 
 import javax.persistence.*;
 import javax.validation.constraints.*;
-import org.hibernate.validator.constraints.Length;
 import java.math.BigDecimal;
-import lombok.*;
+import lombok.Data;
 
 @Entity
 @Table(name = "products")
-@Getter
-@Setter
+@Data
 public class Product {
 
     @Id

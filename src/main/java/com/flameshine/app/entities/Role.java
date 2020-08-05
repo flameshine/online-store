@@ -2,12 +2,11 @@ package com.flameshine.app.entities;
 
 import javax.persistence.*;
 import java.util.Collection;
-import lombok.*;
+import lombok.Data;
 
 @Entity
 @Table(name = "roles")
-@Getter
-@Setter
+@Data
 public class Role {
 
     @Id

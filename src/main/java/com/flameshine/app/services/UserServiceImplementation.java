@@ -37,10 +37,10 @@ public class UserServiceImplementation implements UserService {
 
     @Override
     @Transactional
-    public User save(User user) {
+    public void save(User user) {
         user.setPassword(passwordEncoder.encode(user.getPassword()));
         user.setActivity(true);
         user.setRoles(Collections.singletonList(roleRepository.findByRoleName("ROLE_USER")));
-        return userRepository.saveAndFlush(user);
+        userRepository.saveAndFlush(user);
     }
 }

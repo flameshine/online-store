@@ -11,7 +11,7 @@ public class ApplicationErrorController implements ErrorController {
 
     @RequestMapping(value = PATH)
     public ModelAndView error() {
-        return new ModelAndView("/error");
+        return new ModelAndView(PATH);
     }
 
     @GetMapping(value = "/403")

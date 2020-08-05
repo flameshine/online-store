@@ -4,12 +4,11 @@ import javax.persistence.*;
 import org.hibernate.validator.constraints.*;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import java.util.Collection;
-import lombok.*;
+import lombok.Data;
 
 @Entity
 @Table(name = "users")
-@Getter
-@Setter
+@Data
 public class User {
 
     @Id

@@ -39,8 +39,8 @@ public class RegistrationController {
 
         if (!bindingResult.hasErrors()) {
             userService.save(user);
-            modelAndView.addObject("message", "User has been registered successfully!");
             modelAndView.addObject("user", new User());
+            modelAndView.addObject("message", "User has been registered successfully!");
         }
 
         return modelAndView;
