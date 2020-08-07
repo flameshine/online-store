@@ -32,6 +32,11 @@ public class User {
     @JsonIgnore
     private String password;
 
+    @Transient
+    @NotEmpty(message = "This field is required.")
+    @JsonIgnore
+    private String confirmationPassword;
+
     @Column(name = "first_name", nullable = false)
     @NotEmpty(message = "This field is required.")
     private String firstName;

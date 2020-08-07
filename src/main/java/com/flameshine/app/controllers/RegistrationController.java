@@ -37,6 +37,9 @@ public class RegistrationController {
         if (userService.findByUsername(user.getUsername()).isPresent())
             bindingResult.rejectValue("username", "error.user", "This username is already taken.");
 
+        if (!user.getConfirmationPassword().equals(user.getPassword()))
+            bindingResult.rejectValue("confirmationPassword", "error.user", "Password don't match.");
+
         if (!bindingResult.hasErrors()) {
             userService.save(user);
             modelAndView.addObject("user", new User());

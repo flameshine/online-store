@@ -43,6 +43,11 @@
                     <input type="password" th:field="*{password}" placeholder="Password" class="form-control input-lg"/>
                 </div>
 
+                <div class="form-group">
+                    <label th:if="${#fields.hasErrors('confirmationPassword')}" th:errors="*{confirmationPassword}" class="alert alert-danger"></label>
+                    <input type="password" th:field="*{confirmationPassword}" placeholder="Confirmation Password" class="form-control input-lg"/>
+                </div>
+
                 <div class="row">
                     <div class="col-sm-3" style="float: none; margin: 0 auto">
                         <input type="submit" class="btn btn-primary btn-block" value="Submit"/>

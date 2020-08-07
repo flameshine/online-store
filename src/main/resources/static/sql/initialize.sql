@@ -1,4 +1,4 @@
-INSERT INTO users (user_id, activity, email, first_name, last_name, password, username) VALUES (1, 1, 'excellenceissoon@gmail.com', 'Anton', 'Pokhyla', '$2a$10$8rpziPWIPnZYGeky0c52v.mNYW7qhcEavXZBMdP60AknWbkGczgZ2', 'admin');
+INSERT INTO users (user_id, activity, email, first_name, last_name, password, username) VALUES (1, 1, 'admin@gmail.com', 'admin', 'admin', '$2a$10$8rpziPWIPnZYGeky0c52v.mNYW7qhcEavXZBMdP60AknWbkGczgZ2', 'admin');
 
 INSERT INTO roles (role_id, role_name) VALUES (1, 'ROLE_ADMIN');
 INSERT INTO roles (role_id, role_name) VALUES (2, 'ROLE_USER');
