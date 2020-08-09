@@ -34,4 +34,10 @@ public class HomeController {
 
         return modelAndView;
     }
+
+    @GetMapping(value = "/home/delete/{id}")
+    public String deleteProductFromList(@PathVariable("id") Long id) {
+        productService.findById(id).ifPresent((Long) -> productService.deleteById(id));
+        return "redirect:/home";
+    }
 }

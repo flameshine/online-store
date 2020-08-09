@@ -20,6 +20,12 @@ public class ProductServiceImplementation implements ProductService {
 
     @Override
     @Transactional
+    public void deleteById(Long id) {
+        productRepository.delete(id);
+    }
+
+    @Override
+    @Transactional
     public Optional<Product> findById(Long id) {
         return productRepository.findById(id);
     }
