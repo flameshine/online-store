@@ -9,9 +9,6 @@
       <li>Controller: Spring MVC controllers.</li>
     </ul>
 <li><h2>View</h2>
-All interactions take place in a web browser, directly on the website of this web application.
-This web application consists of the several pages:
-  
 <ul>
 <li>Registration page, where the user can create his own account.</li>
 <li>Login page, where the user can log in into his own account.</li>
