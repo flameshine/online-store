@@ -4,7 +4,7 @@
 <ul>
   <li><h2>Structure</h2>
     <ul>
-      <li>Model: JPA entities and database interactions.</li>
+      <li>Model: JPA entities and repositories, that perform all database interactions.</li>
       <li>View: HTML pages and CSS styles with Bootstrap and JQuery frameworks.</li>
       <li>Controller: Spring MVC controllers.</li>
     </ul>
