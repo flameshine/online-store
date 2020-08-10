@@ -11,11 +11,13 @@
 <li><h2>View</h2>
 All interactions take place in a web browser, directly on the website of this web application.
 This web application consists of the several pages:
+<ul>
 <li>Registration page, where the user can create his own account.</li>
 <li>Login page, where the user can log in into his own account.</li>
 <li>Home page, where is the list of products and their details.</li>
 <li>Cart page, where is the list of products which are stored in the user shopping cart.</li>
 <li>Error and 403 page, which notify the user about some kind of error. </li>
+  </ul>
 <li><h2>Roles</h2>
 There are 2 roles: the admin and the user.
 The user can select products, add them to his cart and buy them.
