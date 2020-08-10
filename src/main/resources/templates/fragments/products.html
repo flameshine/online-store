@@ -19,6 +19,9 @@
             <a class="col-md-1" th:href="@{'/cart/add/{id}'(id = ${product.id})}" sec:authorize="isAuthenticated()" th:if="${product.quantity} > 0">
                 <button type="button" class="btn btn-primary" th:text="Buy">Buy</button>
             </a>
+            <a class="col-md-1" th:href="@{'/home/delete/{id}'(id = ${product.id})}" sec:authorize="hasRole('ADMIN')">
+                <button type="button" class="btn btn-primary" style="margin-left: 1000px; margin-top: 10px" th:text="Delete">Delete</button>
+            </a>
         </div>
 
         <br/>
