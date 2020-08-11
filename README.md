@@ -30,7 +30,7 @@ The admin can advanced abilities - he can be authenticated automatically and can
 <li>Thymeleaf</li>
 <li>Bootstrap</li>
 <li>JQuery</li>
-<li>Lombok</li>
+<li>Project Lombok</li>
 <li>Tomcat</li>
 </ul>
 </li>
