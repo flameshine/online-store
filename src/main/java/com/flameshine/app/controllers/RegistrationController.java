@@ -6,11 +6,14 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.servlet.ModelAndView;
 import javax.validation.Valid;
+import org.slf4j.*;
 import com.flameshine.app.services.UserService;
 import com.flameshine.app.entities.User;
 
 @Controller
 public class RegistrationController {
+
+    private static final Logger logger = LoggerFactory.getLogger(RegistrationController.class);
 
     private final UserService userService;
 
@@ -31,19 +34,22 @@ public class RegistrationController {
 
         ModelAndView modelAndView = new ModelAndView("/registration");
 
+        final String userError = "error.user";
+
         if (userService.findByEmail(user.getEmail()).isPresent())
-            bindingResult.rejectValue("email", "error.user", "This email is already taken.");
+            bindingResult.rejectValue("email", userError, "This email is already taken.");
 
         if (userService.findByUsername(user.getUsername()).isPresent())
-            bindingResult.rejectValue("username", "error.user", "This username is already taken.");
+            bindingResult.rejectValue("username", userError, "This username is already taken.");
 
         if (!user.getConfirmationPassword().equals(user.getPassword()))
-            bindingResult.rejectValue("confirmationPassword", "error.user", "Password don't match.");
+            bindingResult.rejectValue("confirmationPassword", userError, "Password don't match.");
 
         if (!bindingResult.hasErrors()) {
             userService.save(user);
             modelAndView.addObject("user", new User());
             modelAndView.addObject("message", "User has been registered successfully!");
+            logger.info(user.getUsername() + "has been registered successfully.");
         }
 
         return modelAndView;

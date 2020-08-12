@@ -6,12 +6,15 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.data.domain.*;
 import java.util.Optional;
+import org.slf4j.*;
 import com.flameshine.app.services.ProductService;
 import com.flameshine.app.utilities.Pager;
 import com.flameshine.app.entities.Product;
 
 @Controller
 public class HomeController {
+
+    private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 
     private final ProductService productService;
 
@@ -38,6 +41,7 @@ public class HomeController {
     @GetMapping(value = "/home/delete/{id}")
     public String deleteProductFromList(@PathVariable("id") Long id) {
         productService.findById(id).ifPresent((Long) -> productService.deleteById(id));
+        logger.info("Project with id " + id + "was deleted from the store.");
         return "redirect:/home";
     }
 }

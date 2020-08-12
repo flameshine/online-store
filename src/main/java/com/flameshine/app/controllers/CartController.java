@@ -4,11 +4,14 @@ import org.springframework.stereotype.Controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
+import org.slf4j.*;
 import com.flameshine.app.exceptions.NotEnoughProductsInStockException;
 import com.flameshine.app.services.*;
 
 @Controller
 public class CartController {
+
+    private static final Logger logger = LoggerFactory.getLogger(CartController.class);
 
     private final CartService cartService;
 
@@ -31,12 +34,14 @@ public class CartController {
     @GetMapping(value = "/cart/add/{id}")
     public ModelAndView addProductToCart(@PathVariable("id") Long id) {
         productService.findById(id).ifPresent(cartService::add);
+        logger.info("Product with id " + id + "was added to the cart.");
         return cart();
     }
 
     @GetMapping(value = "/cart/remove/{id}")
     public ModelAndView removeProductFromCart(@PathVariable("id") Long id) {
         productService.findById(id).ifPresent(cartService::remove);
+        logger.info("Product with id " + id + "was removed from the cart.");
         return cart();
     }
 
@@ -46,6 +51,7 @@ public class CartController {
         try {
             cartService.checkout();
         } catch (NotEnoughProductsInStockException exception) {
+            logger.error(exception.getMessage() + " occurred.");
             return cart().addObject("notEnoughProductsInTheStockMessage", exception.getMessage());
         }
 
