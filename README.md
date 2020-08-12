@@ -31,6 +31,7 @@ The admin can advanced abilities - he can be authenticated automatically and can
 <li>Bootstrap</li>
 <li>JQuery</li>
 <li>Project Lombok</li>
+<li>slf4j</li>
 <li>Tomcat</li>
 </ul>
 </li>
