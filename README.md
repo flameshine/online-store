@@ -32,7 +32,7 @@ The admin can advanced abilities - he can be authenticated automatically and can
 <li>JQuery</li>
 <li>Project Lombok</li>
 <li>slf4j</li>
-<li>Tomcat</li>
+<li>Embedded Tomcat</li>
 </ul>
 </li>
 <li><h2>Database</h2>
