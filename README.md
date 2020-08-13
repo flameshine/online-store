@@ -23,7 +23,7 @@ The admin can advanced abilities - he can be authenticated automatically and can
 <li><h2>Tools</h2>
 <ul>
 <li>Java + HTML + CSS + SQL</li>
-<li>Spring Boot + Spring Security + Spring MVC + Spring Data</li>
+<li>Spring Boot + Spring Data + Spring MVC + Spring Security</li>
 <li>JPA</li>
 <li>MySQL</li>
 <li>Maven</li>
