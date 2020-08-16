@@ -15,7 +15,7 @@
 <li>Home page, where is the list of products and their details.</li>
 <li>Cart page, where is the list of products which are stored in the user shopping cart.</li>
 <li>Error and 403 page, which notify the user about some kind of error. </li>
-  </ul>
+</ul>
 <li><h2>Roles</h2>
 There are 2 roles: the admin and the user.
 The user can select products, add them to his cart and buy them.
