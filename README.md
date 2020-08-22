@@ -15,7 +15,7 @@
 <li>Home page, where is the list of products and their details.</li>
 <li>Cart page, where is the list of products which are stored in the user shopping cart.</li>
 <li>Error and 403 page, which notify the user about some kind of error. </li>
-  </ul>
+</ul>
 <li><h2>Roles</h2>
 There are 2 roles: the admin and the user.
 The user can select products, add them to his cart and buy them.
@@ -23,7 +23,7 @@ The admin can advanced abilities - he can be authenticated automatically and can
 <li><h2>Tools</h2>
 <ul>
 <li>Java + HTML + CSS + SQL</li>
-<li>Spring Boot + Spring Security + Spring MVC + Spring Data</li>
+<li>Spring Boot + Spring Data + Spring MVC + Spring Security</li>
 <li>JPA</li>
 <li>MySQL</li>
 <li>Maven</li>
@@ -32,7 +32,7 @@ The admin can advanced abilities - he can be authenticated automatically and can
 <li>JQuery</li>
 <li>Project Lombok</li>
 <li>slf4j</li>
-<li>Tomcat</li>
+<li>Embedded Tomcat</li>
 </ul>
 </li>
 <li><h2>Database</h2>
