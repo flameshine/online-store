@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+
+<body>
+
+<div th:fragment="products">
+    <div class="panel-default well" th:each="product : ${products}">
+
+        <div class="panel-heading">
+            <h1 th:text="${product.name}"></h1>
+        </div>
+
+        <h3 th:text="${product.description}" class="panel-body">Description</h3>
+
+        <div class="row panel-footer">
+            <div th:inline="text" class="col-md-2">Price: [[${product.price}]] $</div>
+            <div th:inline="text" class="col-md-9">In stock: [[${product.quantity}]]</div>
+            <a class="col-md-1" th:href="@{'/cart/add/{id}'(id = ${product.id})}" sec:authorize="isAuthenticated()" th:if="${product.quantity} > 0">
+                <button type="button" class="btn btn-primary" th:text="Buy">Buy</button>
+            </a>
+            <a class="col-md-1" th:href="@{'/home/delete/{id}'(id = ${product.id})}" sec:authorize="hasRole('ADMIN')">
+                <button type="button" class="btn btn-primary" style="margin-left: 1000px; margin-top: 10px" th:text="Delete">Delete</button>
+            </a>
+        </div>
+
+        <br/>
+
+    </div>
+</div>
+
+</body>
+
+</html>
