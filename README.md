@@ -19,7 +19,7 @@
 <li><h2>Roles</h2>
 There're 2 roles: the admin and the user.
 The user can select products, add them to his cart and buy them.
-The admin can advanced abilities - he can be authenticated automatically and can delete some products from store.
+The admin can advanced abilities - he can delete some products from store and can be authenticated automatically.
 <li><h2>Tools</h2>
 <ul>
 <li>Java + HTML + CSS + SQL</li>
