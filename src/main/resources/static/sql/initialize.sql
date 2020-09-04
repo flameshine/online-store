@@ -13,3 +13,4 @@ INSERT INTO products (description, name, price, quantity) VALUES ('interesting b
 INSERT INTO products (description, name, price, quantity) VALUES ('ancient jade mask', 'jade mask', 750.00, 1);
 INSERT INTO products (description, name, price, quantity) VALUES ('beautiful postcard', 'postcard', 2.75, 100);
 INSERT INTO products (description, name, price, quantity) VALUES ('modern headphones', 'headphones', 100.00, 2);
+INSERT INTO products (description, name, price, quantity) VALUES ('ancient sword', 'sword', 875.50, 1);
