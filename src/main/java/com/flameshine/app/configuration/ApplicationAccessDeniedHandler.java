@@ -10,7 +10,7 @@ import java.io.IOException;
 public class ApplicationAccessDeniedHandler implements AccessDeniedHandler {
 
     @Override
-    public void handle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, AccessDeniedException e) throws IOException {
+    public void handle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, AccessDeniedException exception) throws IOException {
         httpServletResponse.sendRedirect(httpServletRequest.getContextPath() + "/403");
     }
 }
