@@ -5,5 +5,5 @@ import org.springframework.data.repository.query.Param;
 import com.flameshine.app.entities.Role;
 
 public interface RoleRepository extends JpaRepository<Role, Long> {
-    Role findByRoleName(@Param("roleName") String roleName);
+    Role findByRoleName(@Param(value = "roleName") String roleName);
 }

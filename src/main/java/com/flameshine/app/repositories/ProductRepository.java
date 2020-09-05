@@ -6,5 +6,5 @@ import java.util.Optional;
 import com.flameshine.app.entities.Product;
 
 public interface ProductRepository extends JpaRepository<Product, Long> {
-    Optional<Product> findById(@Param("id") Long id);
+    Optional<Product> findById(@Param(value = "id") Long id);
 }

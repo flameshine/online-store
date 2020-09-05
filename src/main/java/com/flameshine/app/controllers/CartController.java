@@ -9,6 +9,7 @@ import com.flameshine.app.exceptions.NotEnoughProductsInStockException;
 import com.flameshine.app.services.*;
 
 @Controller
+@RequestMapping(value = "/cart")
 public class CartController {
 
     private static final Logger logger = LoggerFactory.getLogger(CartController.class);
@@ -23,7 +24,7 @@ public class CartController {
         this.productService = productService;
     }
 
-    @GetMapping(value = "/cart")
+    @GetMapping(value = "")
     public ModelAndView cart() {
         ModelAndView modelAndView = new ModelAndView("/cart");
         modelAndView.addObject("products", cartService.getCartProducts());
@@ -31,21 +32,21 @@ public class CartController {
         return modelAndView;
     }
 
-    @GetMapping(value = "/cart/add/{id}")
+    @GetMapping(value = "/add/{id}")
     public ModelAndView addProductToCart(@PathVariable("id") Long id) {
         productService.findById(id).ifPresent(cartService::add);
         logger.info("Product with id " + id + "was added to the cart.");
         return cart();
     }
 
-    @GetMapping(value = "/cart/remove/{id}")
+    @GetMapping(value = "/remove/{id}")
     public ModelAndView removeProductFromCart(@PathVariable("id") Long id) {
         productService.findById(id).ifPresent(cartService::remove);
         logger.info("Product with id " + id + "was removed from the cart.");
         return cart();
     }
 
-    @GetMapping(value = "/cart/checkout")
+    @GetMapping(value = "/checkout")
     public ModelAndView checkout() {
 
         try {

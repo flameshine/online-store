@@ -1,11 +1,11 @@
 
-T
-java:S2629%"7Use the built-in formatting to construct this argument.(æ…Í©8Üô×š¾.
-Y
-java:S2629,"7Use the built-in formatting to construct this argument.(³™ìşÿÿÿÿ8Üô×š¾.
-^
-java:S3457%"AFormat specifiers should be used instead of string concatenation.(æ…Í©8Üô×š¾.
-c
-java:S3457,"AFormat specifiers should be used instead of string concatenation.(³™ìşÿÿÿÿ8Üô×š¾.
-^
-java:S34576"AFormat specifiers should be used instead of string concatenation.(¹ÍÑ8À¹›¾.
+a
+java:S3457"AFormat specifiers should be used instead of string concatenation.(³™ìşÿÿÿÿ8Üô×š¾.
+W
+java:S2629"7Use the built-in formatting to construct this argument.(³™ìşÿÿÿÿ8Üô×š¾.
+\
+java:S3457"AFormat specifiers should be used instead of string concatenation.(¹ÍÑ8À¹›¾.
+R
+java:S2629"7Use the built-in formatting to construct this argument.(æ…Í©8Üô×š¾.
+\
+java:S3457"AFormat specifiers should be used instead of string concatenation.(æ…Í©8Üô×š¾.

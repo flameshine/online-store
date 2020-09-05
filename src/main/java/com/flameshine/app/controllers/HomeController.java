@@ -40,7 +40,7 @@ public class HomeController {
 
     @GetMapping(value = "/home/delete/{id}")
     public String deleteProductFromList(@PathVariable("id") Long id) {
-        productService.findById(id).ifPresent((Long) -> productService.deleteById(id));
+        productService.findById(id).ifPresent(x -> productService.deleteById(id));
         logger.info("Project with id " + id + "was deleted from the store.");
         return "redirect:/home";
     }
