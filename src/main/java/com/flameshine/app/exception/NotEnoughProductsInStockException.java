@@ -1,6 +1,6 @@
-package com.flameshine.app.exceptions;
+package com.flameshine.app.exception;
 
-import com.flameshine.app.entities.Product;
+import com.flameshine.app.entity.Product;
 
 public class NotEnoughProductsInStockException extends Exception {
 

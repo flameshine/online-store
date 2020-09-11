@@ -1,9 +1,9 @@
-package com.flameshine.app.repositories;
+package com.flameshine.app.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.query.Param;
 import java.util.Optional;
-import com.flameshine.app.entities.User;
+import com.flameshine.app.entity.User;
 
 public interface UserRepository extends JpaRepository<User, Long> {
 

@@ -1,7 +1,7 @@
-package com.flameshine.app.utilities;
+package com.flameshine.app.utilitity;
 
 import org.springframework.data.domain.Page;
-import com.flameshine.app.entities.Product;
+import com.flameshine.app.entity.Product;
 
 public class Pager {
 

@@ -1,4 +1,4 @@
-package com.flameshine.app.services;
+package com.flameshine.app.service;
 
 import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,9 +7,9 @@ import org.springframework.context.annotation.*;
 import org.springframework.web.context.WebApplicationContext;
 import java.math.BigDecimal;
 import java.util.*;
-import com.flameshine.app.exceptions.NotEnoughProductsInStockException;
-import com.flameshine.app.repositories.ProductRepository;
-import com.flameshine.app.entities.Product;
+import com.flameshine.app.exception.NotEnoughProductsInStockException;
+import com.flameshine.app.repository.ProductRepository;
+import com.flameshine.app.entity.Product;
 
 @Service
 @Scope(value = WebApplicationContext.SCOPE_SESSION, proxyMode = ScopedProxyMode.TARGET_CLASS)

@@ -1,12 +1,12 @@
-package com.flameshine.app.services;
+package com.flameshine.app.service;
 
 import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import java.util.*;
-import com.flameshine.app.repositories.*;
-import com.flameshine.app.entities.User;
+import com.flameshine.app.repository.*;
+import com.flameshine.app.entity.User;
 
 @Service
 public class UserServiceImplementation implements UserService {

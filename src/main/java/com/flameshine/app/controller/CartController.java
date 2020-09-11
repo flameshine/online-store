@@ -1,12 +1,12 @@
-package com.flameshine.app.controllers;
+package com.flameshine.app.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import org.slf4j.*;
-import com.flameshine.app.exceptions.NotEnoughProductsInStockException;
-import com.flameshine.app.services.*;
+import com.flameshine.app.exception.NotEnoughProductsInStockException;
+import com.flameshine.app.service.*;
 
 @Controller
 @RequestMapping(value = "/cart")

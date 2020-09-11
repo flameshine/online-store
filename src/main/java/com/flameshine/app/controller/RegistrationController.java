@@ -1,4 +1,4 @@
-package com.flameshine.app.controllers;
+package com.flameshine.app.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,8 +7,8 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.servlet.ModelAndView;
 import javax.validation.Valid;
 import org.slf4j.*;
-import com.flameshine.app.services.UserService;
-import com.flameshine.app.entities.User;
+import com.flameshine.app.service.UserService;
+import com.flameshine.app.entity.User;
 
 @Controller
 public class RegistrationController {

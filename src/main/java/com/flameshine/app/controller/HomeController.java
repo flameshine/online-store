@@ -1,4 +1,4 @@
-package com.flameshine.app.controllers;
+package com.flameshine.app.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,9 +7,9 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.data.domain.*;
 import java.util.Optional;
 import org.slf4j.*;
-import com.flameshine.app.services.ProductService;
-import com.flameshine.app.utilities.Pager;
-import com.flameshine.app.entities.Product;
+import com.flameshine.app.service.ProductService;
+import com.flameshine.app.utilitity.Pager;
+import com.flameshine.app.entity.Product;
 
 @Controller
 public class HomeController {

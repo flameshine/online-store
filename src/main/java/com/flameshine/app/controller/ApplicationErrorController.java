@@ -1,4 +1,4 @@
-package com.flameshine.app.controllers;
+package com.flameshine.app.controller;
 
 import org.springframework.boot.autoconfigure.web.ErrorController;
 import org.springframework.web.bind.annotation.*;

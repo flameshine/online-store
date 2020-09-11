@@ -1,4 +1,4 @@
-package com.flameshine.app.entities;
+package com.flameshine.app.entity;
 
 import javax.persistence.*;
 import org.hibernate.validator.constraints.*;

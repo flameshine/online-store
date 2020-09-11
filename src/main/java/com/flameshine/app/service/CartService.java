@@ -1,9 +1,9 @@
-package com.flameshine.app.services;
+package com.flameshine.app.service;
 
 import java.math.BigDecimal;
 import java.util.Map;
-import com.flameshine.app.exceptions.NotEnoughProductsInStockException;
-import com.flameshine.app.entities.Product;
+import com.flameshine.app.exception.NotEnoughProductsInStockException;
+import com.flameshine.app.entity.Product;
 
 public interface CartService {
 

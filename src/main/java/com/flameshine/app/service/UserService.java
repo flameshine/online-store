@@ -1,7 +1,7 @@
-package com.flameshine.app.services;
+package com.flameshine.app.service;
 
 import java.util.Optional;
-import com.flameshine.app.entities.User;
+import com.flameshine.app.entity.User;
 
 public interface UserService {
 
