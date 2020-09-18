@@ -6,7 +6,7 @@ import java.math.BigDecimal;
 import lombok.Data;
 
 @Entity
-@Table(name = "products")
+@Table(name = "product")
 @Data
 public class Product {
 

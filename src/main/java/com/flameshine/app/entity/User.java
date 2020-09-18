@@ -7,7 +7,7 @@ import java.util.Collection;
 import lombok.Data;
 
 @Entity
-@Table(name = "users")
+@Table(name = "user")
 @Data
 public class User {
 
@@ -49,6 +49,6 @@ public class User {
     private boolean activity;
 
     @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "user_roles", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
+    @JoinTable(name = "user_role", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
     private Collection<Role> roles;
 }
