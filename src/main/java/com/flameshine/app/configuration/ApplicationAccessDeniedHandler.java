@@ -6,6 +6,10 @@ import org.springframework.security.web.access.AccessDeniedHandler;
 import javax.servlet.http.*;
 import java.io.IOException;
 
+/**
+ * @author Anton Pokhyla
+ */
+
 @Component
 public class ApplicationAccessDeniedHandler implements AccessDeniedHandler {
 

@@ -8,6 +8,10 @@ import java.util.Optional;
 import com.flameshine.app.repository.ProductRepository;
 import com.flameshine.app.entity.Product;
 
+/**
+ * @author Anton Pokhyla
+ */
+
 @Service
 public class ProductServiceImplementation implements ProductService {
 

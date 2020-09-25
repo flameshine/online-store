@@ -5,6 +5,10 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import org.slf4j.*;
 
+/**
+ * @author Anton Pokhyla
+ */
+
 @RestController
 public class ApplicationErrorController implements ErrorController {
 

@@ -8,6 +8,10 @@ import java.util.*;
 import com.flameshine.app.repository.*;
 import com.flameshine.app.entity.User;
 
+/**
+ * @author Anton Pokhyla
+ */
+
 @Service
 public class UserServiceImplementation implements UserService {
 

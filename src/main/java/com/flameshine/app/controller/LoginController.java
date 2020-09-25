@@ -5,6 +5,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import java.security.Principal;
 import org.slf4j.*;
 
+/**
+ * @author Anton Pokhyla
+ */
+
 @Controller
 public class LoginController {
 

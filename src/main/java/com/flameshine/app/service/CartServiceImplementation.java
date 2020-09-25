@@ -11,6 +11,10 @@ import com.flameshine.app.exception.NotEnoughProductsInStockException;
 import com.flameshine.app.repository.ProductRepository;
 import com.flameshine.app.entity.Product;
 
+/**
+ * @author Anton Pokhyla
+ */
+
 @Service
 @Scope(value = WebApplicationContext.SCOPE_SESSION, proxyMode = ScopedProxyMode.TARGET_CLASS)
 public class CartServiceImplementation implements CartService {

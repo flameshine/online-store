@@ -8,6 +8,10 @@ import org.slf4j.*;
 import com.flameshine.app.exception.NotEnoughProductsInStockException;
 import com.flameshine.app.service.*;
 
+/**
+ * @author Anton Pokhyla
+ */
+
 @Controller
 @RequestMapping(value = "/cart")
 public class CartController {

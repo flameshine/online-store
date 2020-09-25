@@ -10,6 +10,10 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.access.AccessDeniedHandler;
 import javax.sql.DataSource;
 
+/**
+ * @author Anton Pokhyla
+ */
+
 @Configuration
 public class SpringSecurityConfiguration extends WebSecurityConfigurerAdapter {
 

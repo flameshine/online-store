@@ -10,6 +10,10 @@ import org.slf4j.*;
 import com.flameshine.app.service.UserService;
 import com.flameshine.app.entity.User;
 
+/**
+ * @author Anton Pokhyla
+ */
+
 @Controller
 public class RegistrationController {
 

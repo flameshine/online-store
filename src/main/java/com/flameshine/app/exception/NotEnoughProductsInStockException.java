@@ -2,6 +2,10 @@ package com.flameshine.app.exception;
 
 import com.flameshine.app.entity.Product;
 
+/**
+ * @author Anton Pokhyla
+ */
+
 public class NotEnoughProductsInStockException extends Exception {
 
     public NotEnoughProductsInStockException(Product product) {

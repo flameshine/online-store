@@ -5,6 +5,10 @@ import javax.validation.constraints.*;
 import java.math.BigDecimal;
 import lombok.Data;
 
+/**
+ * @author Anton Pokhyla
+ */
+
 @Entity
 @Table(name = "product")
 @Data

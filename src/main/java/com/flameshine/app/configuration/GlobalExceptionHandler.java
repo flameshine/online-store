@@ -4,6 +4,10 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.http.HttpStatus;
 
+/**
+ * @author Anton Pokhyla
+ */
+
 @ControllerAdvice
 public class GlobalExceptionHandler {
 

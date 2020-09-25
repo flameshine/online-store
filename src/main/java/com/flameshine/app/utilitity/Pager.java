@@ -3,6 +3,10 @@ package com.flameshine.app.utilitity;
 import org.springframework.data.domain.Page;
 import com.flameshine.app.entity.Product;
 
+/**
+ * @author Anton Pokhyla
+ */
+
 public class Pager {
 
     private final Page<Product> products;

@@ -11,6 +11,10 @@ import com.flameshine.app.service.ProductService;
 import com.flameshine.app.utilitity.Pager;
 import com.flameshine.app.entity.Product;
 
+/**
+ * @author Anton Pokhyla
+ */
+
 @Controller
 public class HomeController {
 

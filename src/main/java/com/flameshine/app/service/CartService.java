@@ -5,6 +5,10 @@ import java.util.Map;
 import com.flameshine.app.exception.NotEnoughProductsInStockException;
 import com.flameshine.app.entity.Product;
 
+/**
+ * @author Anton Pokhyla
+ */
+
 public interface CartService {
 
     void add(Product product);

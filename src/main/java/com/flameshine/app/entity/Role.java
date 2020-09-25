@@ -4,6 +4,10 @@ import javax.persistence.*;
 import java.util.Collection;
 import lombok.Data;
 
+/**
+ * @author Anton Pokhyla
+ */
+
 @Entity
 @Table(name = "role")
 @Data
