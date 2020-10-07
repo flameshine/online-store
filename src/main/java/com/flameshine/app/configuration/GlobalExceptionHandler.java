@@ -14,8 +14,11 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(Throwable.class)
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     public ModelAndView exception(final Throwable throwable) {
-        ModelAndView modelAndView = new ModelAndView("/error");
+
+        final ModelAndView modelAndView = new ModelAndView("/error");
+
         modelAndView.addObject("errorMessage", (throwable != null ? throwable.toString() : "Unknown Error"));
+
         return modelAndView;
     }
 }

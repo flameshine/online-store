@@ -30,11 +30,11 @@ public class HomeController {
     @GetMapping(value = {"/", "/home"})
     public ModelAndView home(@RequestParam("page") Optional<Integer> page) {
 
-        ModelAndView modelAndView = new ModelAndView("/home");
+        final ModelAndView modelAndView = new ModelAndView("/home");
 
-        int evaluation = (page.orElse(0) < 1) ? 0 : page.get() - 1;
+        final int evaluation = (page.orElse(0) < 1) ? 0 : page.get() - 1;
 
-        Page<Product> products = productService.findAllPageableProducts(new PageRequest(evaluation, 5));
+        final Page<Product> products = productService.findAllPageableProducts(new PageRequest(evaluation, 5));
 
         modelAndView.addObject("products", products);
         modelAndView.addObject("pager", new Pager(products));

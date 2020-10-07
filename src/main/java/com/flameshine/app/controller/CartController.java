@@ -30,9 +30,12 @@ public class CartController {
 
     @GetMapping(value = "")
     public ModelAndView cart() {
-        ModelAndView modelAndView = new ModelAndView("/cart");
+
+        final ModelAndView modelAndView = new ModelAndView("/cart");
+
         modelAndView.addObject("products", cartService.getCartProducts());
         modelAndView.addObject("totalValue", cartService.getTotal().toString());
+
         return modelAndView;
     }
 

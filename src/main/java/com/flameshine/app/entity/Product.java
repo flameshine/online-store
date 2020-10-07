@@ -42,7 +42,7 @@ public class Product {
         if (object == null || getClass() != object.getClass())
             return false;
 
-        Product product = (Product) object;
+        final Product product = (Product) object;
 
         return id.equals(product.id);
     }

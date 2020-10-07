@@ -28,15 +28,18 @@ public class RegistrationController {
 
     @GetMapping(value = "/registration")
     public ModelAndView registration() {
-        ModelAndView modelAndView = new ModelAndView("/registration");
+
+        final ModelAndView modelAndView = new ModelAndView("/registration");
+
         modelAndView.addObject("user", new User());
+
         return modelAndView;
     }
 
     @PostMapping(value = "/registration")
     public ModelAndView registration(@Valid User user, BindingResult bindingResult) {
 
-        ModelAndView modelAndView = new ModelAndView("/registration");
+        final ModelAndView modelAndView = new ModelAndView("/registration");
 
         final String userError = "error.user";
 
