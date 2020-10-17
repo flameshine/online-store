@@ -1,0 +1,11 @@
+node {
+
+  stage('SCM checkout') {
+    git 'https://github.com/flameshine/online-store'
+  }
+  
+  stage('compile-package') {
+    sh 'mvn package'
+  }
+  
+}
