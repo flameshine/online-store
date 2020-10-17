@@ -1,11 +1,12 @@
 node {
 
-  stage('SCM checkout') {
+  stage ('SCM checkout') {
     git 'https://github.com/flameshine/online-store'
   }
   
-  stage('compile-package') {
-    sh 'mvn package'
+  stage ('compile-package') {
+    def MAVEN_HOME = tool name: 'maven', type: 'maven'
+    sh "${MAVEN_HOME}/bin/mvn package"
   }
   
 }
