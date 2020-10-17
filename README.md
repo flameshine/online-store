@@ -32,7 +32,6 @@ The admin can advanced abilities - he can delete some products from store and ca
 <li>JQuery</li>
 <li>Project Lombok</li>
 <li>slf4j</li>
-<li>Jenkins</li>
 <li>Embedded Tomcat</li>
 </ul>
 </li>
