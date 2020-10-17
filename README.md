@@ -1,4 +1,4 @@
-# online-store §123
+# online-store
 <h3>Implementation of online shopping cart application with authentication system.</h3>
 <h2>Overview:</h2>
 <ul>
