@@ -7,8 +7,9 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.data.domain.*;
 import java.util.Optional;
 import org.slf4j.*;
+
 import com.flameshine.app.service.ProductService;
-import com.flameshine.app.utilitity.Pager;
+import com.flameshine.app.util.Pager;
 import com.flameshine.app.entity.Product;
 
 /**

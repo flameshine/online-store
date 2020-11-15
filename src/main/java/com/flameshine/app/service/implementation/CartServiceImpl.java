@@ -1,4 +1,4 @@
-package com.flameshine.app.service;
+package com.flameshine.app.service.implementation;
 
 import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,8 +7,10 @@ import org.springframework.context.annotation.*;
 import org.springframework.web.context.WebApplicationContext;
 import java.math.BigDecimal;
 import java.util.*;
-import com.flameshine.app.exception.NotEnoughProductsInStockException;
+
 import com.flameshine.app.repository.ProductRepository;
+import com.flameshine.app.service.CartService;
+import com.flameshine.app.exception.NotEnoughProductsInStockException;
 import com.flameshine.app.entity.Product;
 
 /**
@@ -17,14 +19,14 @@ import com.flameshine.app.entity.Product;
 
 @Service
 @Scope(value = WebApplicationContext.SCOPE_SESSION, proxyMode = ScopedProxyMode.TARGET_CLASS)
-public class CartServiceImplementation implements CartService {
+public class CartServiceImpl implements CartService {
 
     private final ProductRepository productRepository;
 
     private final Map<Product, Integer> products = new HashMap<>();
 
     @Autowired
-    public CartServiceImplementation(ProductRepository productRepository) {
+    public CartServiceImpl(ProductRepository productRepository) {
         this.productRepository = productRepository;
     }
 

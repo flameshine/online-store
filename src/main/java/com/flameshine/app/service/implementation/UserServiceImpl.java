@@ -1,11 +1,13 @@
-package com.flameshine.app.service;
+package com.flameshine.app.service.implementation;
 
 import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import java.util.*;
+
 import com.flameshine.app.repository.*;
+import com.flameshine.app.service.UserService;
 import com.flameshine.app.entity.User;
 
 /**
@@ -13,7 +15,7 @@ import com.flameshine.app.entity.User;
  */
 
 @Service
-public class UserServiceImplementation implements UserService {
+public class UserServiceImpl implements UserService {
 
     private final UserRepository userRepository;
     private final RoleRepository roleRepository;
@@ -21,7 +23,7 @@ public class UserServiceImplementation implements UserService {
     private final PasswordEncoder passwordEncoder;
 
     @Autowired
-    public UserServiceImplementation(UserRepository userRepository, RoleRepository roleRepository, PasswordEncoder passwordEncoder) {
+    public UserServiceImpl(UserRepository userRepository, RoleRepository roleRepository, PasswordEncoder passwordEncoder) {
         this.userRepository = userRepository;
         this.roleRepository = roleRepository;
         this.passwordEncoder = passwordEncoder;

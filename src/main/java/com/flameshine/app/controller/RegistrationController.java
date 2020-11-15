@@ -7,6 +7,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.servlet.ModelAndView;
 import javax.validation.Valid;
 import org.slf4j.*;
+
 import com.flameshine.app.service.UserService;
 import com.flameshine.app.entity.User;
 

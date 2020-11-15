@@ -1,6 +1,7 @@
-package com.flameshine.app.utilitity;
+package com.flameshine.app.util;
 
 import org.springframework.data.domain.Page;
+
 import com.flameshine.app.entity.Product;
 
 /**
