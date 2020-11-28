@@ -1,5 +1,5 @@
 # online-store
-<h3>Implementation of online shopping cart application with authentication system.</h3>
+<h3>Implementation of the online store with the shopping cart and an authentication system.</h3>
 <h2>Overview:</h2>
 <ul>
   <li><h2>Structure</h2>
