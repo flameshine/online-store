@@ -31,7 +31,7 @@ public class HomeController {
     @GetMapping(value = {"/", "/home"})
     public ModelAndView home(@RequestParam("page") Optional<Integer> page) {
 
-        final ModelAndView modelAndView = new ModelAndView("/home");
+        final var modelAndView = new ModelAndView("/home");
 
         final int evaluation = (page.orElse(0) < 1) ? 0 : page.get() - 1;
 

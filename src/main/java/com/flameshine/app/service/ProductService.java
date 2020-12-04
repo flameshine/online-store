@@ -1,7 +1,8 @@
 package com.flameshine.app.service;
 
-import org.springframework.data.domain.*;
 import java.util.Optional;
+
+import org.springframework.data.domain.*;
 
 import com.flameshine.app.entity.Product;
 

@@ -30,7 +30,7 @@ public class RegistrationController {
     @GetMapping(value = "/registration")
     public ModelAndView registration() {
 
-        final ModelAndView modelAndView = new ModelAndView("/registration");
+        final var modelAndView = new ModelAndView("/registration");
 
         modelAndView.addObject("user", new User());
 
@@ -40,7 +40,7 @@ public class RegistrationController {
     @PostMapping(value = "/registration")
     public ModelAndView registration(@Valid User user, BindingResult bindingResult) {
 
-        final ModelAndView modelAndView = new ModelAndView("/registration");
+        final var modelAndView = new ModelAndView("/registration");
 
         final String userError = "error.user";
 

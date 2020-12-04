@@ -1,5 +1,7 @@
 package com.flameshine.app.configuration;
 
+import javax.sql.DataSource;
+
 import org.springframework.context.annotation.*;
 import org.springframework.beans.factory.annotation.*;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
@@ -8,7 +10,6 @@ import org.springframework.security.config.annotation.authentication.builders.Au
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.access.AccessDeniedHandler;
-import javax.sql.DataSource;
 
 /**
  * @author Anton Pokhyla

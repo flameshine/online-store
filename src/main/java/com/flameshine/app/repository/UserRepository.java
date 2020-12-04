@@ -1,8 +1,9 @@
 package com.flameshine.app.repository;
 
+import java.util.Optional;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.query.Param;
-import java.util.Optional;
 
 import com.flameshine.app.entity.User;
 

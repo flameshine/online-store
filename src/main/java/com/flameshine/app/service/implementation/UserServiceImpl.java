@@ -1,10 +1,11 @@
 package com.flameshine.app.service.implementation;
 
+import java.util.*;
+
 import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import java.util.*;
 
 import com.flameshine.app.repository.*;
 import com.flameshine.app.service.UserService;
