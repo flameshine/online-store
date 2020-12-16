@@ -16,7 +16,7 @@ public class ApplicationErrorController implements ErrorController {
 
     @RequestMapping(value = "/error")
     public ModelAndView error() {
-        logger.info("An error occurred on the server.");
+        logger.info("An error occurred on the server side.");
         return new ModelAndView("/error");
     }
 

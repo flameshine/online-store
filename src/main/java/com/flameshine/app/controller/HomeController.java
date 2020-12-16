@@ -1,11 +1,12 @@
 package com.flameshine.app.controller;
 
+import java.util.Optional;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.data.domain.*;
-import java.util.Optional;
 import org.slf4j.*;
 
 import com.flameshine.app.service.ProductService;
@@ -31,7 +32,7 @@ public class HomeController {
     @GetMapping(value = {"/", "/home"})
     public ModelAndView home(@RequestParam("page") Optional<Integer> page) {
 
-        final var modelAndView = new ModelAndView("/home");
+        final ModelAndView modelAndView = new ModelAndView("/home");
 
         final int evaluation = (page.orElse(0) < 1) ? 0 : page.get() - 1;
 

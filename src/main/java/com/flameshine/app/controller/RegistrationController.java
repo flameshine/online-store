@@ -1,11 +1,12 @@
 package com.flameshine.app.controller;
 
+import javax.validation.Valid;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.servlet.ModelAndView;
-import javax.validation.Valid;
 import org.slf4j.*;
 
 import com.flameshine.app.service.UserService;
@@ -30,7 +31,7 @@ public class RegistrationController {
     @GetMapping(value = "/registration")
     public ModelAndView registration() {
 
-        final var modelAndView = new ModelAndView("/registration");
+        final ModelAndView modelAndView = new ModelAndView("/registration");
 
         modelAndView.addObject("user", new User());
 
@@ -40,7 +41,7 @@ public class RegistrationController {
     @PostMapping(value = "/registration")
     public ModelAndView registration(@Valid User user, BindingResult bindingResult) {
 
-        final var modelAndView = new ModelAndView("/registration");
+        final ModelAndView modelAndView = new ModelAndView("/registration");
 
         final String userError = "error.user";
 

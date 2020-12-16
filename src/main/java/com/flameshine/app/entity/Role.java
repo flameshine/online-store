@@ -1,8 +1,9 @@
 package com.flameshine.app.entity;
 
 import java.util.Collection;
-
 import javax.persistence.*;
+
+import lombok.Data;
 
 /**
  * @author Anton Pokhyla
@@ -10,6 +11,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "role")
+@Data
 public class Role {
 
     @Id
@@ -22,30 +24,4 @@ public class Role {
 
     @ManyToMany(cascade = CascadeType.ALL, mappedBy = "roles")
     private Collection<User> users;
-
-    public Role() {}
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getRoleName() {
-        return roleName;
-    }
-
-    public void setRoleName(String roleName) {
-        this.roleName = roleName;
-    }
-
-    public Collection<User> getUsers() {
-        return users;
-    }
-
-    public void setUsers(Collection<User> users) {
-        this.users = users;
-    }
 }

@@ -78,7 +78,11 @@ public class SpringSecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .dataSource(dataSource)
                 .passwordEncoder(passwordEncoderBean());
 
-        authenticationManagerBuilder.inMemoryAuthentication().withUser(adminUsername).password(adminPassword).roles("ADMIN");
+        authenticationManagerBuilder
+                .inMemoryAuthentication()
+                .withUser(adminUsername)
+                .password(adminPassword)
+                .roles("ADMIN");
     }
 
     @Bean

@@ -1,7 +1,6 @@
 package com.flameshine.app.configuration;
 
 import java.io.IOException;
-
 import javax.servlet.http.*;
 
 import org.springframework.stereotype.Component;

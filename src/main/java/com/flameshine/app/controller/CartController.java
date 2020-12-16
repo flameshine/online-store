@@ -32,7 +32,7 @@ public class CartController {
     @GetMapping(value = "")
     public ModelAndView cart() {
 
-        final var modelAndView = new ModelAndView("/cart");
+        final ModelAndView modelAndView = new ModelAndView("/cart");
 
         modelAndView.addObject("products", cartService.getCartProducts());
         modelAndView.addObject("totalValue", cartService.getTotal().toString());
@@ -60,7 +60,7 @@ public class CartController {
         try {
             cartService.checkout();
         } catch (NotEnoughProductsInStockException exception) {
-            logger.error(exception.getMessage() + " occurred.");
+            logger.error(exception.getMessage());
             return cart().addObject("notEnoughProductsInTheStockMessage", exception.getMessage());
         }
 
