@@ -78,7 +78,7 @@ public class CartServiceImpl implements CartService {
     @Override
     public BigDecimal getTotal() {
         return products.entrySet().stream()
-                .map(entry -> entry.getKey().getPrice().multiply(BigDecimal.valueOf(entry.getValue())))
+                .map(x -> x.getKey().getPrice().multiply(BigDecimal.valueOf(x.getValue())))
                 .reduce(BigDecimal::add)
                 .orElse(BigDecimal.ZERO);
     }
